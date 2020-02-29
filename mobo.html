@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dator</title>
+  </head>
+  <body>
+    <div class="sidebarwrapper">
+      <div class="sidebar">
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="chassi.html">Chassi</a></li>
+          <li><a href="mobo.html">Moderkort</a></li>
+          <li><a href="cpu.html">Processor</a></li>
+          <li><a href="gpu.html">Grafikkort</a></li>
+          <li><a href="ram.html">Ramminne</a></li>
+          <li><a href="shd.html">Lagringsutrymme</a></li>
+        </ul>
+        <button class="sidebarbtn">
+          <span></span>
+        </button>
+      </div>
+      <main class="main">
+        <h1>hej</h1>
+      </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.sidebar').toggleClass('active');
+        $('.sidebarbtn').toggleClass('toggle');
+        $('.main').toggleClass('mainactive')
+
+        $('.sidebarbtn').click(function(){
+          $('.sidebar').toggleClass('active');
+          $('.sidebarbtn').toggleClass('toggle');
+          $('.main').toggleClass('mainactive')
+        })
+      })
+    </script>
+  </body>
+</html>
