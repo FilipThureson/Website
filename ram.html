@@ -6,6 +6,9 @@
     <title>Dator</title>
   </head>
   <body>
+    <header class="header">
+      <h1>Dator Hjälp</h1>
+    </header>
     <div class="sidebarwrapper">
       <div class="sidebar">
         <ul>
@@ -22,10 +25,16 @@
         </button>
       </div>
       <main class="main">
-        <h1>hej</h1>
-      </main>
-    </div>
+        <h2>Allmän info</h2>
 
+      </main>
+    <footer class="footer">
+      <p id="källtext">
+        källor: <a target="_blank" href="http://www.wikipedia.com">wikipedia.com</a>
+      </p>
+    </footer>
+
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -33,6 +42,8 @@
           $('.sidebar').toggleClass('active');
           $('.sidebarbtn').toggleClass('toggle');
           $('.main').toggleClass('mainactive')
+          $('.footer').toggleClass('footeractive')
+          $('.header').toggleClass('headeractive')
         })
       })
     </script>
