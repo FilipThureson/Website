@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jqurey.js"></script>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Dator</title>
     <meta name="viewport" content="height=device-height" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <header class="header">
+    <header class="header headeractive">
       <h1>Dator Hjälp</h1>
     </header>
     <div class="sidebarwrapper">
-      <div class="sidebar">
+      <div class="sidebar active">
         <ul>
           <li><a href="index.html">Hem</a></li>
           <li><a href="chassi.html">Chassi</a></li>
@@ -21,50 +23,39 @@
           <li><a href="ram.html">Ramminne</a></li>
           <li><a href="shd.html">Lagringsutrymme</a></li>
         </ul>
-        <button class="sidebarbtn">
+        <button class="sidebarbtn toggle">
           <span></span>
         </button>
       </div>
-      <main class="main">
+      <main class="main mainactive">
         <h2>Allmän info</h2>
-          <p>För att kunna bygga din dator själv med egen valda delar kommer du behöva veta lite om de olika delarna och vad de gör. Det kan du få reda på här!
-            Genom att klicka på de olika länkarna över. De olika komponterna kommer behöva passa med varandra och inte vara för bra eller dåliga för varann heller.
-             Det kan vara svårt och förstå och därför kommer denna sidan hjälpa och förklara alla viktiga delar och betydelser av de olika delarna i en dator.
-             Här är hur en dators delar är sammankopplade.
-             <br>
-             <a href="img/nedladdning.png" target="_blank">
-               <button class="btn" type="button" name="button">Visa</button>
-             </a>
-             <br>
-             Det finns olika typer utav storlekar på datorer. De mest använda är i följande ordning.
-             <br>
-             &bull; ATX
-             <br>
-             &bull; Micro-ATX (mATX)
-             <br>
-             &bull; Mini-ITX (mITX)
-             <br>
-             Dessa storlekar bestämmer hur stor moderkortet kan vara så att det får plats i chassit. Det finns också en storlek extended-atx men den används inte så mycket för konsument klass utav datorbyggen.
-          </p>
+        <p>
+          För att kunna bygga din dator själv med egen valda delar kommer du behöva veta lite om de olika delarna och vad de gör. Det kan du få reda på här!
+          Genom att klicka på de olika länkarna över. De olika komponterna kommer behöva passa med varandra och inte vara för bra eller dåliga för varann heller.
+           Det kan vara svårt och förstå och därför kommer denna sidan hjälpa och förklara alla viktiga delar och betydelser av de olika delarna i en dator.
+           Här är hur en dators delar är sammankopplade.
+           <br>
+           <a href="img/nedladdning.png" target="_blank">
+             <button class="btn" type="button" name="button">Visa</button>
+           </a>
+           <br>
+           Det finns olika typer utav storlekar på datorer. De mest använda är i följande ordning.
+           <br>
+           &bull; ATX
+           <br>
+           &bull; Micro-ATX (mATX)
+           <br>
+           &bull; Mini-ITX (mITX)
+           <br>
+           Dessa storlekar bestämmer hur stor moderkortet kan vara så att det får plats i chassit. Det finns också en storlek extended-atx men den används inte så mycket för konsument klass utav datorbyggen.
+       </p>
       </main>
-    <footer class="footer">
+    <footer class="footer footeractive">
       <p id="källtext">
         källor: <a target="_blank" href="http://www.wikipedia.com">wikipedia.com</a>
       </p>
     </footer>
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.sidebarbtn').click(function(){
-          $('.sidebar').toggleClass('active');
-          $('.sidebarbtn').toggleClass('toggle');
-          $('.main').toggleClass('mainactive')
-          $('.footer').toggleClass('footeractive')
-          $('.header').toggleClass('headeractive')
-        })
-      })
-    </script>
   </body>
 </html>
