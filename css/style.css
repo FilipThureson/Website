@@ -17,6 +17,9 @@ body{
 .active{
   left: 0;
 }
+main::-webkit-scrollbar {
+    display: none;
+}
 main{
   position: fixed;
   left: 50px;
@@ -32,6 +35,9 @@ main{
   width: 70%;
   left:300px;
 }
+footer::-webkit-scrollbar {
+    display: none;
+}
 footer{
   position: fixed;
   top: 90%;
@@ -46,6 +52,9 @@ footer{
 .footeractive{
   width: 100%;
   left: 300px;
+}
+header::-webkit-scrollbar {
+    display: none;
 }
 header{
   position: fixed;
