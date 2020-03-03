@@ -13,11 +13,12 @@ body{
   width: 250px;
   height: 100%;
   transition: .3s;
-  z-index: 1;
+  z-index: 3;
 }
 .active{
   left: 0;
 }
+/*
 .fadeout{
   background: black;
   opacity: 0.4;
@@ -27,39 +28,25 @@ body{
   opacity: 100%;
   z-index: 2;
 }
-main::-webkit-scrollbar {
+*/
+.main::-webkit-scrollbar {
     display: none;
-}
-main{
-  position: fixed;
-  left: 50px;
-  top: 10%;
-  right: 0;
-  background: #f5f5f5;
-  height: 80%;
-  width: 90%;
-  transition: .4s;
-  overflow-y: scroll;
 }
 /*
 .mainactive{
   width: 70%;
   left:300px;
 }
-*/x
-footer::-webkit-scrollbar {
-    display: none;
-}
+*/
 footer{
   position: fixed;
   top: 90%;
   left: 50px;
   right: 0;
   height: 10%;
-  width: 100%;
-  background: #f5f5f5;
+  width: 90%;
+  background:#f5f5f5;
   transition: .3s;
-  overflow-y:scroll;
 }
 /*.footeractive{
   width: 100%;
@@ -93,12 +80,29 @@ ul{
 ul li{
   list-style: none;
 }
+/*
 ul li a{
   padding: 10px 20px;
   color: #fff;
   display: block;
   text-decoration: none;
   border-bottom: 1px solid rgba(0,0,0,.2);
+}
+*/
+.btn1{
+  text-align: left;
+  width: 100%;
+  padding: 10px 20px;
+  background:#262626;
+  display:block;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  color:grey;
+  height: 10%;
+  font-size: 20px;
+}
+.btn1:hover{
+  font-size: 22px;
 }
 .sidebarbtn{
   position: absolute;
@@ -182,17 +186,83 @@ font-weight: 500;
 text-decoration: underline;
 color: black;
 }
-@media only screen and (max-width: 600px) (max-height: 320px;) {
-  main{
-    display: flex;
-  }
-  footer{
-    display: flex;
-  }
-  header{
-    display: flex;
-  }
-}
 a:hover{
   font-size: 20px;
+}
+.main{
+  position: fixed;
+  left: 50px;
+  top: 10%;
+  right: 0;
+  background:#f5f5f5;
+  height: 80%;
+  width: 90%;
+  transition: .4s;
+  z-index: 1;
+}
+.chassi{
+  position: fixed;
+  left: 50px;
+  top: 10%;
+  right: 0;
+  background:#f5f5f5;
+  height: 80%;
+  width: 90%;
+  transition: .4s;
+  z-index: 1;
+}
+.cpu{
+  position: fixed;
+  left: 50px;
+  top: 10%;
+  right: 0;
+  background:#f5f5f5;
+  height: 80%;
+  width: 90%;
+  transition: .4s;
+  z-index: 1;
+}
+.gpu{
+  position: fixed;
+  left: 50px;
+  top: 10%;
+  right: 0;
+  background:#f5f5f5;
+  height: 80%;
+  width: 90%;
+  transition: .4s;
+  z-index: 1;
+}
+.mobo{
+  position: fixed;
+  left: 50px;
+  top: 10%;
+  right: 0;
+  background:#f5f5f5;
+  height: 80%;
+  width: 90%;
+  transition: .4s;
+  z-index: 1;
+}
+.ram{
+  position: fixed;
+  left: 50px;
+  top: 10%;
+  right: 0;
+  background:#f5f5f5;
+  height: 80%;
+  width: 90%;
+  transition: .4s;
+  z-index: 1;
+}
+.utrymme{
+  position: fixed;
+  left: 50px;
+  top: 10%;
+  right: 0;
+  background:#f5f5f5;
+  height: 80%;
+  width: 90%;
+  transition: .4s;
+  z-index: 2;
 }
