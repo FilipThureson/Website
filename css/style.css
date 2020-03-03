@@ -13,9 +13,19 @@ body{
   width: 250px;
   height: 100%;
   transition: .3s;
+  z-index: 1;
 }
 .active{
   left: 0;
+}
+.fadeout{
+  background: black;
+  opacity: 0.4;
+  z-index: 2;
+}
+.fadeoutactive{
+  opacity: 100%;
+  z-index: 2;
 }
 main::-webkit-scrollbar {
     display: none;
@@ -31,10 +41,12 @@ main{
   transition: .4s;
   overflow-y: scroll;
 }
+/*
 .mainactive{
   width: 70%;
   left:300px;
 }
+*/x
 footer::-webkit-scrollbar {
     display: none;
 }
@@ -49,10 +61,11 @@ footer{
   transition: .3s;
   overflow-y:scroll;
 }
-.footeractive{
+/*.footeractive{
   width: 100%;
   left: 300px;
 }
+*/
 header::-webkit-scrollbar {
     display: none;
 }
@@ -67,10 +80,12 @@ header{
   transition: .3s;
   overflow-y: auto;
 }
+/*
 .headeractive{
   width: 100%;
   left: 300px;
 }
+*/
 ul{
   margin: 0;
   padding: 20px 0px;
@@ -177,4 +192,7 @@ color: black;
   header{
     display: flex;
   }
+}
+a:hover{
+  font-size: 20px;
 }
