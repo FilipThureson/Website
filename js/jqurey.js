@@ -72,4 +72,14 @@ $(document).ready(function(){
     $('.utrymme').css("z-index", "2");
     $('.main').css("z-index", "1");
   })
+  $('#video').click(function() {
+    $('.chassi').css("z-index", "1");
+    $('.cpu').css("z-index", "1");
+    $('.gpu').css("z-index", "1");
+    $('.mobo').css("z-index", "1");
+    $('.ram').css("z-index", "1");
+    $('.utrymme').css("z-index", "1");
+    $('.main').css("z-index", "1");
+    $('.video').css("z-index", "2")
+  })
 })
