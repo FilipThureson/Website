@@ -108,5 +108,4 @@ $(document).ready(function(){
      $('.main').css("z-index", "1");
      $('.video').css("z-index", "2");
    });
-
 })
