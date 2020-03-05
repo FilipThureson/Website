@@ -258,11 +258,6 @@ a:hover{
   width: 90%;
   transition: .4s;
   z-index: 1;
-  overflow-y: scroll;
-  overflow-x: scroll;
-}
-.video::-webkit-scrollbar {
-    display: none;
 }
 #pcpartpicker:hover{
   font-size: 18px;
