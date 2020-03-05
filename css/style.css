@@ -13,7 +13,7 @@ body{
   width: 250px;
   height: 100%;
   transition: .3s;
-  z-index: 3;
+  z-index: 4;
 }
 .active{
   left: 0;
@@ -22,11 +22,11 @@ body{
 .fadeout{
   background: black;
   opacity: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 .fadeoutactive{
   opacity: 50%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .main::-webkit-scrollbar {
@@ -42,6 +42,7 @@ footer{
   width: 90%;
   background:#f5f5f5;
   transition: .3s;
+  z-index: 3;
 }
 header::-webkit-scrollbar {
     display: none;
@@ -56,6 +57,7 @@ header{
   width: 90%;
   transition: .3s;
   overflow-y: auto;
+  z-index: 3;
 }
 ul{
   margin: 0;
@@ -272,4 +274,10 @@ a:hover{
 }
 .chassibild:hover{
   font-size: 18px;
+}
+.blocker{
+  z-index:2;
+  height: 100%;
+  width: 100%;
+  background: black;
 }
