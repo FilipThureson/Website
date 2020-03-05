@@ -34,11 +34,11 @@ $(document).ready(function(){
     $('.mobo').css("z-index", "1");
     $('.ram').css("z-index", "1");
     $('.utrymme').css("z-index", "1");
-    $('.main').css("z-index", "2");
+    $('.main').css("z-index", "3");
     $('.video').css("z-index", "1")
   })
   $('#chassi').click(function() {
-    $('.chassi').css("z-index", "2");
+    $('.chassi').css("z-index", "3");
     $('.cpu').css("z-index", "1");
     $('.gpu').css("z-index", "1");
     $('.mobo').css("z-index", "1");
@@ -52,7 +52,7 @@ $(document).ready(function(){
     $('.chassi').css("z-index", "1");
     $('.cpu').css("z-index", "1");
     $('.gpu').css("z-index", "1");
-    $('.mobo').css("z-index", "2");
+    $('.mobo').css("z-index", "3");
     $('.ram').css("z-index", "1");
     $('.utrymme').css("z-index", "1");
     $('.main').css("z-index", "1");
@@ -60,7 +60,7 @@ $(document).ready(function(){
   })
   $('#cpu').click(function() {
     $('.chassi').css("z-index", "1");
-    $('.cpu').css("z-index", "2");
+    $('.cpu').css("z-index", "3");
     $('.gpu').css("z-index", "1");
     $('.mobo').css("z-index", "1");
     $('.ram').css("z-index", "1");
@@ -71,7 +71,7 @@ $(document).ready(function(){
   $('#gpu').click(function() {
     $('.chassi').css("z-index", "1");
     $('.cpu').css("z-index", "1");
-    $('.gpu').css("z-index", "2");
+    $('.gpu').css("z-index", "3");
     $('.mobo').css("z-index", "1");
     $('.ram').css("z-index", "1");
     $('.utrymme').css("z-index", "1");
@@ -83,7 +83,7 @@ $(document).ready(function(){
     $('.cpu').css("z-index", "1");
     $('.gpu').css("z-index", "1");
     $('.mobo').css("z-index", "1");
-    $('.ram').css("z-index", "2");
+    $('.ram').css("z-index", "3");
     $('.utrymme').css("z-index", "1");
     $('.main').css("z-index", "1");
     $('.video').css("z-index", "1");
@@ -94,7 +94,7 @@ $(document).ready(function(){
     $('.gpu').css("z-index", "1");
     $('.mobo').css("z-index", "1");
     $('.ram').css("z-index", "1");
-    $('.utrymme').css("z-index", "2");
+    $('.utrymme').css("z-index", "3");
     $('.main').css("z-index", "1");
     $('.video').css("z-index", "1");
   })
@@ -106,6 +106,6 @@ $(document).ready(function(){
      $('.ram').css("z-index", "1");
      $('.utrymme').css("z-index", "1");
      $('.main').css("z-index", "1");
-     $('.video').css("z-index", "2");
+     $('.video').css("z-index", "3");
    });
 })
