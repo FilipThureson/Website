@@ -9,6 +9,7 @@
     <meta name="viewport" content="height=device-height" content="width=device-width, initial-scale=2.0"/>
   </head>
   <body>
+    <div id="overlay" ></div>
     <div class="blocker">
     <div class="sidebarwrapper">
       <div class="sidebar">
@@ -46,7 +47,6 @@
       <header class="header">
         <h1>Dator Hjälp</h1>
       </header>
-      <div class="fadeout">
       <div class="main">
         <p>
           Problem med att hitta rätt dator delar?
@@ -64,14 +64,19 @@
         </p>
       </div>
       <div class="chassi">
+        <h2>Chassi</h2>
         <p>Chassit i en dator är som ett skal som håller inne alla delar. Chassit kommer i olika storlekar som bestämer hur stora resten av delarna är.
           Chassin kommer i olika formfaktorer.
           <br>
           <br>
-          &bull;Tower-Chassi som står upp och är högre än vad den är bred. &nbsp;<a class="chassibild" target="_blank" href="https://ingaming.se/16709-thickbox_default/fractal-design-core-2500-midi-tower.jpg"><button class="chassibtn" type="button" name="button">Tower Chassi</button></a>
+          &bull;Tower-Chassi som står upp och är högre än vad den är bred.
+          <br>
           <br>
           &bull;Desktop-Chassi som ligger ner så att den blir breddare än hög.
           <br>
+          Bild Exempel
+          <a class="chassibild" target="_blank" href="https://ingaming.se/16709-thickbox_default/fractal-design-core-2500-midi-tower.jpg"><button class="chassibtn" type="button" name="button">Tower Chassi</button></a>&nbsp;
+          <a class="chassibild" target="_blank" href="https://www.proshop.se/Images/915x900/2515851_0f4c565c1af7.jpg"> <button class="chassibtn" type="button" name="button">Desktop Chassi</button> </a>
           <br>
           De olika formfaktorerna har saker gemensamt. Moderkort storlekarna är samma oavsett tillverkare. De kommer i 3 vanliga storlekarna
           ATX,mATX och mITX. Det viktiga att kolla är är ifall chassit stödjer formfaktorn ditt moderkort har.
@@ -82,14 +87,30 @@
           SFX & ATX Detta är inte samma som moderkortet och blanda inte ihop de.
           <br>
           Chassit är olika inbyggda I/O portar, Vissa kan vara usb vissa 3,5 headphonejack. Om du vill ha en speciell input/output måste man se till så
-          att chassit har den. T.ex. USB-C som är nytt. Många chassin har det inte så då for man se till att köpa ett med eller ett moderkort stödjer det.
+          att chassit har den. T.ex. USB-C som är nytt. Många chassin har det inte så då får man se till att köpa ett med eller ett moderkort stödjer det.
           Chassits i/o kopplas också in i moderkortet eller andra delar. Då måste moderkortet ha en intern plats för den kabel.
 
 
         </p>
       </div>
       <div class="cpu">
-        cpu
+        <h2>Allänt Processor Information</h2>
+        <p>
+          CPU-Central-Processing-Unit-Processorn i en dator. Det finns två olika typer av processorarkitekturer. Dessa är kallade RISC och CISC. RISC är en förkortning till
+          engelska Reduced Instruction Set Computing. CISC står för Complex Instruction Set Complex. Dessa gör olika processorer
+        </p>
+          <h2>Chache-minne</h2>
+          <p>Chache minnet i en processor gör en kopia utav senaste använda datorn och  ofta använd data för att minka laddnings tider, Speicellt vid långsammare internet.
+            detta görs genom undvika ladda in samma data igen. <br>
+            Chache minnet fungerar genom att ha ett antal datavärdern, Varje utav dessa datavärden är en kopia ifrån långsamare disk med samma värden.
+            Dessa datavärden organiseras i ett register men olika etiketter eller igenkännings "namn". Då kan datorn se var ifrån deras orginal värden
+            kommer ifrån. Så när datorn ska ladda in ny data kollar den ifall värdena passar med de som finns i chache, om inte så måsta allt läsas in till de långsammare minnerna. Om de finns
+            så laddas det från chacheminnet. Chace minnen kommer i små storlekar då de är nyra att tillverka och köpa.
+          </p>
+          <h2>Cores/Threads</h2>
+          <p>
+            Cores/Kärnor i processorn är fysika delar som byter content i de
+          </p>
       </div>
       <div class="gpu">
         gpu
@@ -111,8 +132,6 @@
 
     <footer class="footer">
     </footer>
-  </div>
-  </div>
   </div>
  </body>
 </html>
