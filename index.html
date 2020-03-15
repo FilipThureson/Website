@@ -30,10 +30,7 @@
             <button class="btn1" id="gpu" type="button" name="button">Grafikkort</button>
           </li>
           <li>
-            <button class="btn1" id="ram" type="button" name="button">Ramminne</button>
-          </li>
-          <li>
-            <button class="btn1" id="hdd" type="button" name="button">Lagringsutrymme</button>
+            <button class="btn1" id="ram" type="button" name="button">Ram minne</button>
           </li>
           <li>
             <button class="btn1" id="video" type="button" name="button">Ihopsättning</button>
@@ -98,7 +95,7 @@
         <h2>Allänt Processor Information</h2>
         <p>
         CPU-Central-Processing-Unit-Processorn i en dator. Det finns två olika typer av processorarkitekturer. Dessa är kallade RISC och CISC. RISC är en förkortning till
-        engelska Reduced Instruction Set Computing. CISC står för Complex Instruction Set Complex. Dessa gör olika processorer
+        engelska Reduced Instruction Set Computing. CISC står för Complex Instruction Set Complex. Dessa gör olika processorerna.
       </p>
         <h2>Chache-minne</h2>
         <p>Chache minnet i en processor gör en kopia utav senaste använda datorn och  ofta använd data för att minka laddnings tider, Speicellt vid långsammare internet.
@@ -142,23 +139,68 @@
         <p>Grafikkort en utav datorns viktigaste delar, Utan ett grafikkort så kan man inte få någon bild på en skärm.
           Dessa kommer såklart i massa olika storlekas och prisklasser.
           Grafikkortets uppgift är att arbetar med att läsa in grafiken och sedan ge ut den genom i/o portar, Grafikkort kan komma inbyggt på din processor, detta är ofta tillräckligt för att göra enklare
-          grafikrenderingar som surfa på webben eller kolla film, i vissa fall tillräckligt för lättare spel. 
-
+          grafikrenderingar som surfa på webben eller kolla film, i vissa fall tillräckligt för lättare spel. För grövre arbeten kommer man behöva ett graffikkort som är större och sätts in i datorn.
+          dessa sätts in i moderkorter och behöver ofta extra ström, dessa får den i en viss typ utav kabel. De graikkortet används för allt mellan spel och komplicerande renderingar.
+          Det viktiga med dessa är att se till så du har tillräckligt mycket störm till det sammt rätt sladdar. De här grafikkorten fungerat nästan som sina egna små dator som är bara gjord för att få fram bilderna.
+          De har eget Ram minne och egen processor. De gör så att de andra delarna i datorn kan göra det de ska också istället för att göra grafikkorters arbete. Dessa har sina egna video utportar vilket det är viktigt
+          att koppla in skärmen i annars använder man inte grafikkortet kraft utan processorns graikkort, samt om ens processor inte har en graikavdelning så kommer man inte få någon bild.
+          <h2>Typer av Grafikkort</h2>
+          <p>
+            Graikkort är i alla olika datorer på någon sätt, inbyggt i processor eller inte så har en dator ett grafikkort. Dessa mera avancerade kopplas som sagt in i moderkortet genom en port som kallas
+            pcie express. Det finns olika typer av sådana portar med de som graikkort ska använda är pcie x16 express det finns också x1 och x4
+            Priset höjs högt på grafikort när man vill ha bättre. De mesta spelen klarar sig bra på enklare garfikkort som Nividia GTX 1660 eller AMD (samma företag som gör processor) RX580
+            men om man vill har finare inställningar behöver man gå upp i klasser.
+            De finns också grafikkort som kallar Low profile vilket är typr som ofta sitter i desktop datorer.
+          </p>
+            <h2>Vilka saker är viktiga att tänka på?</h2>
+            <p>
+              De viktigaste att specifikationer att tänka på är i följande ordning:
+              <br>
+              &bull;Cores-Hur många käror garikkortets processor har. det finns olika typer av kärnon men ofta har en med mer kärnon bättre prestanda än en med mindre i samma ålder.
+              <br>
+              &bull;Vram-Hur mycket ram minne grafikkortet har. Desto mer ju mera kan den ladda in och ge ut på din skärm
+            </p>
         </p>
       </div>
       <div class="mobo">
-        mobo
+        <h2>Moderkort</h2>
+        <p>
+        Moderkortet är en utav datorns viktigaste delar, Den kopplar saman allt, Du kan tänka dig som att det är nersystemet i din kropp kopplar samman hjärnan med musklerna och alla organ.
+        på moderkortet finns det många små kopplingar som kopplar samman processorn med t.ex. lagringen, antingen genom SATA-portar eller m.2. portar, SATA kopplar man in en kabel mellan lagringsdisken
+        och moderkortet men m.2 kopplas direkt på moderkortet. De sist nämnda är det snabbate alternativet, Det finns två typer av dessa nmve vilket är en mindre pcie port i form av m.2 eller SATA som
+        använder samma typgräns som vanliga SATA portar.</p>
+        <h2>CPU-Socket</h2>
+        <p>
+        På moderkortet så placerar man även in processor. den har sin egna socket och beroende på processor behövs det olika sockets. Det är viktig att ta rätt för en processor kommer i värsta fall gå sönder om man trycker in det i fel.
+        De finns två olika typer av dessa sockets, LGA där pinsen för att få kontakt sitter på moderkortet och bara små guld plattor som får kontakt med de sitter på processorn. PGA är exakt tvärt om,
+        AMD använder sig mest av PGA medans Intel av LGA.</p>
+        <h2>Allämnt om vad som kopplas in</h2>
+        <p>
+        I moderkortet sätter man in:
+        <br>
+        &bull; Ram
+        <br>
+        &bull; CPU (porcessor)
+        <br>
+        &bull; GPU (Grafikkort)
+        <br>
+        &bull; Lagrings Diskar
+        </p>
       </div>
       <div class="ram">
-        ram
-      </div>
-      <div class="utrymme">
-        utrymme
+        <h2>Ram minne</h2>
+        <p>
+          Ram minnena läser in vad ett program get ut för data och ger vidare det till processorn och de andra lagrings diskarna. Detta minne är ofta väldigt snabbt men långsammare en Cache minnet.
+          Man har ofta mellan 2-16gb ram minne installerat. Mer gaming och workstations kan ha upp mot 128gb utav ram, I vissa servrar behövs det ännu mer och kan ha upp mot 1tb (1000gb) utav ram minnen.
+          Dessa jobbar med processorn för att få data tilll och från programmet. Om man har mer ram installerat så kommer man även kunna ha en snabbare dator. Till vissa gränser då.
+          Snabbare ram minne kan också göra din processor snabbare då den kan få data och skicka data snabbare till resten av datorn.
+          Dessa kopplas in ofta brevid datorn i sina egna sockets.   
+        </p>
       </div>
       <div class="video">
         <h2>OBS! Videon är på engelska!</h2>
         <br>
-        <iframe src="https://www.youtube.com/embed/jM6kIWJAW-I" height="360px" width="480px" class="ytvideo"></iframe>
+        <iframe id="ytvideo" src="https://www.youtube.com/embed/jM6kIWJAW-I"  class="ytvideo"></iframe>
       </div>
 
     <footer class="footer">

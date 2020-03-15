@@ -97,16 +97,6 @@ v=true;
     $('.main').css("z-index", "1");
     $('.video').css("z-index", "1");
   })
-  $('#hdd').click(function() {
-    $('.chassi').css("z-index", "1");
-    $('.cpu').css("z-index", "1");
-    $('.gpu').css("z-index", "1");
-    $('.mobo').css("z-index", "1");
-    $('.ram').css("z-index", "1");
-    $('.utrymme').css("z-index", "3");
-    $('.main').css("z-index", "1");
-    $('.video').css("z-index", "1");
-  })
   $('#video').click(function() {
      $('.chassi').css("z-index", "1");
      $('.cpu').css("z-index", "1");
