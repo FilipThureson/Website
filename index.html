@@ -30,10 +30,7 @@
             <button class="btn1" id="gpu" type="button" name="button">Grafikkort</button>
           </li>
           <li>
-            <button class="btn1" id="ram" type="button" name="button">Ramminne</button>
-          </li>
-          <li>
-            <button class="btn1" id="hdd" type="button" name="button">Lagringsutrymme</button>
+            <button class="btn1" id="ram" type="button" name="button">Ram minne</button>
           </li>
           <li>
             <button class="btn1" id="video" type="button" name="button">Ihopsättning</button>
@@ -45,9 +42,10 @@
         </button>
       </div>
       <header class="header">
-        <h1>Dator Hjälp</h1>
+        <h1>Dator Information</h1>
       </header>
       <div class="main">
+        <br>
         <p>
           Problem med att hitta rätt dator delar?
           <br>
@@ -96,17 +94,33 @@
       <div class="cpu">
         <h2>Allänt Processor Information</h2>
         <p>
-          CPU-Central-Processing-Unit-Processorn i en dator. Det finns två olika typer av processorarkitekturer. Dessa är kallade RISC och CISC. RISC är en förkortning till
-          engelska Reduced Instruction Set Computing. CISC står för Complex Instruction Set Complex. Dessa gör olika processorer
+        CPU-Central-Processing-Unit-Processorn i en dator. Det finns två olika typer av processorarkitekturer. Dessa är kallade RISC och CISC. RISC är en förkortning till
+        engelska Reduced Instruction Set Computing. CISC står för Complex Instruction Set Complex. Dessa gör olika processorerna.
+      </p>
+        <h2>Chache-minne</h2>
+        <p>Chache minnet i en processor gör en kopia utav senaste använda datorn och  ofta använd data för att minka laddnings tider, Speicellt vid långsammare internet.
+          detta görs genom undvika ladda in samma data igen. <br>
+          Chache minnet fungerar genom att ha ett antal datavärdern, Varje utav dessa datavärden är en kopia ifrån långsamare disk med samma värden.
+          Dessa datavärden organiseras i ett register men olika etiketter eller igenkännings "namn". Då kan datorn se var ifrån deras orginal värden
+          kommer ifrån. Så när datorn ska ladda in ny data kollar den ifall värdena passar med de som finns i chache, om inte så måsta allt läsas in till de långsammare minnerna. Om de finns
+          så laddas det från chacheminnet. Chace minnen kommer i små storlekar då de är nyra att tillverka och köpa.
         </p>
-          <h2>Chache-minne</h2>
-          <p>Chache minnet i en processor gör en kopia utav senaste använda datorn och  ofta använd data för att minka laddnings tider, Speicellt vid långsammare internet.
-            detta görs genom undvika ladda in samma data igen. <br>
-            Chache minnet fungerar genom att ha ett antal datavärdern, Varje utav dessa datavärden är en kopia ifrån långsamare disk med samma värden.
-            Dessa datavärden organiseras i ett register men olika etiketter eller igenkännings "namn". Då kan datorn se var ifrån deras orginal värden
-            kommer ifrån. Så när datorn ska ladda in ny data kollar den ifall värdena passar med de som finns i chache, om inte så måsta allt läsas in till de långsammare minnerna. Om de finns
-            så laddas det från chacheminnet. Chace minnen kommer i små storlekar då de är nyra att tillverka och köpa.
+        <h2>Cores/Threads</h2>
+        <p>
+          Cores/Kärnor i processorn är fysika delen som innehåller alla Threads är en virtuell procces som utför arbeter och Kärnorna Bestämmer vilka som ska göra vad.
+          Idag är det flesta processorer med 2 eller mera känor och dubbla eller lika många trådar. <br>
+          Det viktiga att tänka på här är vad är det du ska använda datorn till? <br>
+          &bull;Spela Spel? - Då behövs inte många kärnon och trådar då många spel inte är gjorda för att använda mer än ett visst antal.
+          Nyare spel är gjorda för nyare processorer vilket gör att de kan använda mer kärnon och trådar. Sweetspot för gaming är mellan 4-6 cores och 4-12 threads. <br>
+          &bull;Media/internet dator? Med detta menar jag att datorns främsta användnings områden är att surfa internet kolla på filmer osv. Eftersom dessa områden inte är
+          lika ansträngande - för en dator så behövs inte lika mycket prestanda och därför räcker det med mindre antal av kärnor och trådar. Sweetspot är är mellan 2-4 cores och 4 threads. <br>
+          &bull; Workstation/Redigerings dator? - Är är du inriktad på att kunda redera stora videor klara av många arbeten och uträkningar. Dessa datorer är allt mellan bara enkla redigerings datorer för hobbyfilmskapare tillverkare
+          till datorer endast gjorda för att beräkna svåra och långa beräkningar, För det mesta är det redigerings datorer i detta stycke. En redigerings dator änvänds för att t.ex. rendera film, 3d desing, amimation osv. Dessa dator är gjorda
+          för att klara sådana uppgifter lätt och snabbt. Jag skulle säga att Sweetspot för kärnor och trådar för dessa är 8-16 kärnor och 16-32 trådar beroende på vilken typ av program och arbete som ska utföras.
+          Om man skall bygga en dator endast gjord för komplicerade beräkningar så vet man redan vad man gör och kan sina saker, om du annars skulle vara helt ny till dator-bygge och bygga en sådan dator så ber jag dig att
+          läsa på om vanliga datorer och mer djupgående information för det ämnet.
           </p>
+<<<<<<< HEAD
           <h2>Cores/Threads</h2>
           <p>
             Cores/Kärnor i processorn är fysika delen som innehåller alla Threads är en virtuell procces som utför arbeter och Kärnorna Bestämmer vilka som ska göra vad.
@@ -117,24 +131,89 @@
             Media/internet dator? Med detta menar jag att datorns främsta användnings områden är att surfa internet kolla på filmer osv. Eftersom dessa områden inte är
             lika ansträngande för en dator så behövs inte lika mycket prestanda och därför räcker det med mindre antal av kärnor och trådar. Sweetspot är är mellan 2-4 cores och 4 threads.
             
+=======
+          <h2>Vilken tillverkare ska jag välja?</h2>
+          <p>Det finns två stora cpu tillverkare i dator specifikation dessa två är AMD och Intel, Jag skall vara så neutrall mot båda tillverkarna. <br>
+            &bull;AMD - Advance Micro Devices är en stor tillverkare till många utav datorn viktigare delar, Men deras proccesorer har ofta varit efter Intels i prestation, På senare år har AMD kommit fram med
+            processorarkitekturer som hotar Intel i prestanda och prisklass, Detta gjorde till att de nyare processorerna blev billigare och bättre av båda tillverkarna. AMD har varit mer för Workstations och datorer med multicore behov men deras senare
+            har även fångat upp Intel i spel, Många ser detta som att AMD har kommit ikapp Intel som inte var berädda på det och även passerat i processor branschen. <br>
+            &bull;Intel - Integrated electronics, Detta tillverkarna har länge varit i framkant på prestanda och oftast därför varit dyrare en amd, Derras processor har inte skilt sig så mycket under de senare åren med de tre största
+            Intel Core i3/5/7. Där 3 är mer för media och surf datorer och 7 workstation, 5 mer mitten bra för de mesta. deras kärn och tråd antal har varit näst intill samma under alla år de har tillverkats, i3 - 2/4, i5 - 4/4, i7 4/8 (Cores/Threads)
+            dessa som sagt var samma väldigt länge tills AMD kom och hotade de, då uppdaterades de, Dessa har ofta varit långt först i alla olika inriktiningar med på senare tider fått ha en mer rättviss kamp med AMD.
+
+            <br>
+            &bull; Vilken är bättre? Jag tycker att AMD verkar bättre i tillfället, Men kollar man bakåt i historan så ser man att AMD för åldras sämre än Intel, De mer framtids säkra rutten är då Intel, Detta om historan skriver om sig själv vilken många
+            inte tror att den ska göra. Nu är de ungefär samma prestanda för samma pris. Välj den bästa för ett visst pris och vet vad det är du vill göra med datorn.
+>>>>>>> 3c25bd9d4ab7c3d46ee8e8cc502d08be7910b61d
           </p>
       </div>
       <div class="gpu">
-        gpu
+        <h2>Grafikkort</h2>
+        <p>Grafikkort en utav datorns viktigaste delar, Utan ett grafikkort så kan man inte få någon bild på en skärm.
+          Dessa kommer såklart i massa olika storlekas och prisklasser.
+          Grafikkortets uppgift är att arbetar med att läsa in grafiken och sedan ge ut den genom i/o portar, Grafikkort kan komma inbyggt på din processor, detta är ofta tillräckligt för att göra enklare
+          grafikrenderingar som surfa på webben eller kolla film, i vissa fall tillräckligt för lättare spel. För grövre arbeten kommer man behöva ett graffikkort som är större och sätts in i datorn.
+          dessa sätts in i moderkorter och behöver ofta extra ström, dessa får den i en viss typ utav kabel. De graikkortet används för allt mellan spel och komplicerande renderingar.
+          Det viktiga med dessa är att se till så du har tillräckligt mycket störm till det sammt rätt sladdar. De här grafikkorten fungerat nästan som sina egna små dator som är bara gjord för att få fram bilderna.
+          De har eget Ram minne och egen processor. De gör så att de andra delarna i datorn kan göra det de ska också istället för att göra grafikkorters arbete. Dessa har sina egna video utportar vilket det är viktigt
+          att koppla in skärmen i annars använder man inte grafikkortet kraft utan processorns graikkort, samt om ens processor inte har en graikavdelning så kommer man inte få någon bild.
+          <h2>Typer av Grafikkort</h2>
+          <p>
+            Graikkort är i alla olika datorer på någon sätt, inbyggt i processor eller inte så har en dator ett grafikkort. Dessa mera avancerade kopplas som sagt in i moderkortet genom en port som kallas
+            pcie express. Det finns olika typer av sådana portar med de som graikkort ska använda är pcie x16 express det finns också x1 och x4
+            Priset höjs högt på grafikort när man vill ha bättre. De mesta spelen klarar sig bra på enklare garfikkort som Nividia GTX 1660 eller AMD (samma företag som gör processor) RX580
+            men om man vill har finare inställningar behöver man gå upp i klasser.
+            De finns också grafikkort som kallar Low profile vilket är typr som ofta sitter i desktop datorer.
+          </p>
+            <h2>Vilka saker är viktiga att tänka på?</h2>
+            <p>
+              De viktigaste att specifikationer att tänka på är i följande ordning:
+              <br>
+              &bull;Cores-Hur många käror garikkortets processor har. det finns olika typer av kärnon men ofta har en med mer kärnon bättre prestanda än en med mindre i samma ålder.
+              <br>
+              &bull;Vram-Hur mycket ram minne grafikkortet har. Desto mer ju mera kan den ladda in och ge ut på din skärm
+            </p>
+        </p>
       </div>
       <div class="mobo">
-        mobo
+        <h2>Moderkort</h2>
+        <p>
+        Moderkortet är en utav datorns viktigaste delar, Den kopplar saman allt, Du kan tänka dig som att det är nersystemet i din kropp kopplar samman hjärnan med musklerna och alla organ.
+        på moderkortet finns det många små kopplingar som kopplar samman processorn med t.ex. lagringen, antingen genom SATA-portar eller m.2. portar, SATA kopplar man in en kabel mellan lagringsdisken
+        och moderkortet men m.2 kopplas direkt på moderkortet. De sist nämnda är det snabbate alternativet, Det finns två typer av dessa nmve vilket är en mindre pcie port i form av m.2 eller SATA som
+        använder samma typgräns som vanliga SATA portar.</p>
+        <h2>CPU-Socket</h2>
+        <p>
+        På moderkortet så placerar man även in processor. den har sin egna socket och beroende på processor behövs det olika sockets. Det är viktig att ta rätt för en processor kommer i värsta fall gå sönder om man trycker in det i fel.
+        De finns två olika typer av dessa sockets, LGA där pinsen för att få kontakt sitter på moderkortet och bara små guld plattor som får kontakt med de sitter på processorn. PGA är exakt tvärt om,
+        AMD använder sig mest av PGA medans Intel av LGA.</p>
+        <h2>Allämnt om vad som kopplas in</h2>
+        <p>
+        I moderkortet sätter man in:
+        <br>
+        &bull; Ram
+        <br>
+        &bull; CPU (porcessor)
+        <br>
+        &bull; GPU (Grafikkort)
+        <br>
+        &bull; Lagrings Diskar
+        </p>
       </div>
       <div class="ram">
-        ram
-      </div>
-      <div class="utrymme">
-        utrymme
+        <h2>Ram minne</h2>
+        <p>
+          Ram minnena läser in vad ett program get ut för data och ger vidare det till processorn och de andra lagrings diskarna. Detta minne är ofta väldigt snabbt men långsammare en Cache minnet.
+          Man har ofta mellan 2-16gb ram minne installerat. Mer gaming och workstations kan ha upp mot 128gb utav ram, I vissa servrar behövs det ännu mer och kan ha upp mot 1tb (1000gb) utav ram minnen.
+          Dessa jobbar med processorn för att få data tilll och från programmet. Om man har mer ram installerat så kommer man även kunna ha en snabbare dator. Till vissa gränser då.
+          Snabbare ram minne kan också göra din processor snabbare då den kan få data och skicka data snabbare till resten av datorn.
+          Dessa kopplas in ofta brevid datorn i sina egna sockets.   
+        </p>
       </div>
       <div class="video">
         <h2>OBS! Videon är på engelska!</h2>
         <br>
-        <iframe src="https://www.youtube.com/embed/jM6kIWJAW-I" height="360px" width="480px" class="ytvideo"></iframe>
+        <iframe id="ytvideo" src="https://www.youtube.com/embed/jM6kIWJAW-I"  class="ytvideo"></iframe>
       </div>
 
     <footer class="footer">

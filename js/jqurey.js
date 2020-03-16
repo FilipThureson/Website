@@ -26,6 +26,14 @@ v=true;
    $('.footer').toggleClass('footeractive')
    $('.header').toggleClass('headeractive')
    $('.fadeout').toggleClass('fadeoutactive')
+   if(v==true){
+       on();
+       v=false;
+     }
+   else{
+   off();
+   v=true;
+   }
   })
 
   $('#start').click(function() {
@@ -36,7 +44,7 @@ v=true;
     $('.ram').css("z-index", "1");
     $('.utrymme').css("z-index", "1");
     $('.main').css("z-index", "3");
-    $('.video').css("z-index", "1")
+    $('.video').css("z-index", "1");
   })
   $('#chassi').click(function() {
     $('.chassi').css("z-index", "3");
@@ -86,16 +94,6 @@ v=true;
     $('.mobo').css("z-index", "1");
     $('.ram').css("z-index", "3");
     $('.utrymme').css("z-index", "1");
-    $('.main').css("z-index", "1");
-    $('.video').css("z-index", "1");
-  })
-  $('#hdd').click(function() {
-    $('.chassi').css("z-index", "1");
-    $('.cpu').css("z-index", "1");
-    $('.gpu').css("z-index", "1");
-    $('.mobo').css("z-index", "1");
-    $('.ram').css("z-index", "1");
-    $('.utrymme').css("z-index", "3");
     $('.main').css("z-index", "1");
     $('.video').css("z-index", "1");
   })
