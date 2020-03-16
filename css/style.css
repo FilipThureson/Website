@@ -213,6 +213,7 @@ a:hover{
   width: 90%;
   transition: .4s;
   z-index: 1;
+  overflow-y: scroll;
 }
 .mobo{
   position: fixed;
@@ -224,6 +225,7 @@ a:hover{
   width: 90%;
   transition: .4s;
   z-index: 1;
+  overflow-y: scroll;
 }
 .ram{
   position: fixed;
@@ -289,4 +291,28 @@ a:hover{
 #ytvideo{
   height:360px;
    width:480px;
+}
+.mobo::-webkit-scrollbar{
+  width: 5px;
+}
+.mobo::-webkit-scrollbar-track{
+  width: 7px;
+}
+.mobo::-webkit-scrollbar-thumb{
+  width: 5px;
+  background: #a1a1a1;
+  height: 10px;
+  border-radius: 30px;
+}
+.gpu::-webkit-scrollbar{
+  width: 5px;
+}
+.gpu::-webkit-scrollbar-track{
+  width: 7px;
+}
+.gpu::-webkit-scrollbar-thumb{
+  width: 5px;
+  background: #a1a1a1;
+  height: 10px;
+  border-radius: 30px;
 }
